@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>identificacion de emociones</title>
+</head>
+<body>
+    <center>
+        <div class="container">
+      <h1 class="btn btn-default heading">Reconocimiento de imagen</h1>
+      <h4>El modelo esta entrenado para identificar los siguientes objetos</h4>
+      <label for="">feliz</label>
+      <hr>
+      <label for="">enojado</label>
+      <hr>
+      <label for="">triste</label>
+      <hr>
+      <label for="">sorprendido</label>
+      <hr>
+      <label for="">pensativo</label>
+      <hr>
+      <label for="">vista de la camara:</label>
+      
+      <div id="camera"></div>
+      <br>
+      <br>
+      <div id="resultado"></div>
+      
+      <button onclick="take_snapshot()">capturar imagen</button>
+      <button onclick="check()">identificar imagen</button>
+      <p>objeto:</p><span id="nombre">nombre</span>
+      <p>precision:</p><span id="porcentaje">%</span>
+      
+      
+        </div> 
+        </center>
+        <script src="main.js"></script>    
+</body>
+</html>
